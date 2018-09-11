@@ -4,7 +4,8 @@ The role of a .gitignore file is to tell git which files it should ignore before
 
 What does fast-forward in Git mean?
 
-Fast-forward in git will update only the branch pointer without creating a merge commit. In other words, instead of creating a new commit, git will just point master to the latest commit of the feature branch. 
+Fast-forward in git will update only the branch pointer without creating a merge commit. In other words, instead of creating a new commit, git will just point master to the latest commit of the feature branch. As long as the branch is not divergent from master – master
+can “fast-forward” to catch up with the branch.
 
 Why should you have different branches?
 
@@ -13,4 +14,4 @@ Because having different branches is awesome. A Git branch is essentially an ind
 
 In a project how many remote Git repositories do you usually have?
 
-One.
+Usually we have one repositorie but in some cases we can have more than one repositories too. With multiple repositories, each team can work independently and minimize impacting the other projects while reusing and constantly improving the codebases. This also keeps teams from shifting focus/speed when changes come in from other teams. 
